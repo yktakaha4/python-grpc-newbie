@@ -14,7 +14,8 @@ class SimpleServiceServicer(simple_pb2_grpc.SimpleServiceServicer):
 
     # 受信時の処理
     def SimpleSend(self, request, context):
-        text = 'This is TEST!'
+        name = request.name if request.name else 'annonymous'
+        text = f'Hello, {name.capitalize()}!'
         image_b64 = base64.b64encode((open('./app/image.jpg', 'rb').read())).decode('utf8')
         return simple_pb2.SimpleResponse(text=text, image=image_b64)
 

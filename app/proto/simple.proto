@@ -4,6 +4,7 @@ package simple;
 
 // リクエスト
 message SimpleRequest {
+  string name = 1;
 }
 
 // レスポンス
