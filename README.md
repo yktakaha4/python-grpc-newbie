@@ -16,4 +16,5 @@ poetry run python -m app.proto.codegen
 poetry run python -m app.simple_server
 
 # (別ターミナルで)クライアント起動
+poetry run python -m app.simple_client
 ```
