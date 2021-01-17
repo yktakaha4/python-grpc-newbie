@@ -1,6 +1,7 @@
-/app/proto/dist/*
-!.gitkeep
 /client.jpg
+/app/proto/dist/*
+!/app/proto/dist/__init__.py
+!.gitkeep
 
 # Created by https://www.toptal.com/developers/gitignore/api/jetbrains,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=jetbrains,python
